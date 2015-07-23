@@ -9,6 +9,8 @@ public class PlayerControl : MonoBehaviour {
 	public Transform player;
 	private Animator animator;
 
+	public GameObject bullet;
+
 	// Use this for initialization
 	void Start () {
 		animator = player.GetComponent<Animator> ();
@@ -17,12 +19,31 @@ public class PlayerControl : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		move ();
+
+		if (Input.GetButtonDown ("Fire1")) {
+			GameObject b = Instantiate(bullet) as GameObject;
+			b.transform.eulerAngles = transform.eulerAngles;
+			b.transform.position = transform.position;
+
+		}
 	}
 
 	void OnCollisionEnter2D(Collision2D col) {
-		if (col.gameObject.tag == "chao") {
+		if (col.gameObject.tag == "chao")  {
 			animator.SetBool("noChao",true);
 			animator.SetBool("pulando",false);
+		}
+		else if (col.gameObject.tag == "Enemy") {
+			Destroy(gameObject);
+		}
+	}
+
+	void OnTriggerEnter2D(Collider2D col) {
+		if (col.gameObject.tag == "Coin")  {
+			Destroy(col.gameObject);
+			InventoryControl.coins += 1 ;
+		} else if (col.gameObject.tag == "EndPhase") {
+			Application.LoadLevel ("map");
 		}
 	}
 
@@ -57,9 +78,9 @@ public class PlayerControl : MonoBehaviour {
 
 	private void vertical() {
 		if (Input.GetButtonDown("Jump") && !animator.GetBool("pulando")) {
-			//player.getComponent<Rigidbody2D>().AddForce(transform.up * forcaPulo);
-			//animator.SetBool("pulando", true);
-			//animator.SetBool("noChao",false);
+			GetComponent<Rigidbody2D>().AddForce(new Vector2(0,600));
+			animator.SetBool("pulando", true);
+			animator.SetBool("noChao",false);
 		}
 
 	}

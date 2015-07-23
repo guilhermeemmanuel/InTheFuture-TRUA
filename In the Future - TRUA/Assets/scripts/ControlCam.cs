@@ -7,16 +7,16 @@ public class ControlCam : MonoBehaviour {
 	public Transform marginLeft;
 	public Transform marginRight;
 	
-	private float margemUpY;
-	private float margemDownY;
+	//private float margemUpY;
+	//private float margemDownY;
 
 	private float margem;
 
 	
 	// Use this for initialization
-	void Start () {
-		margemUpY = float.MaxValue;
-		margemDownY = float.MinValue;
+	void Start ()  {
+		//margemUpY = float.MaxValue;
+		//margemDownY = float.MinValue;
 	}
 	
 	// Update is called once per frame

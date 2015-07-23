@@ -12,15 +12,15 @@ public class CameraControl : MonoBehaviour {
 	
 	
 	private Transform player;		// Reference to the player's transform.
-	private float old;
-	private float atual;
+	//private float old;
+	//private float atual;
 
 	
 	void Start ()
 	{
 		// Setting up the reference.
 		player = GameObject.FindGameObjectWithTag("Player").transform;
-		old = player.transform.position.y;
+		//old = player.transform.position.y ;
 	}
 	
 	
@@ -41,8 +41,8 @@ public class CameraControl : MonoBehaviour {
 	void FixedUpdate ()
 	{
 
-		atual = player.position.y - old;
-		old = player.position.y;
+		//atual = player.position.y - old;
+		//old = player.position.y;
 		TrackPlayer();
 	}
 	

@@ -1,0 +1,319 @@
+fileFormatVersion: 2
+guid: be077e2e951531a4eb13676febbe1c3a
+timeCreated: 1434077412
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: maverick hunter_0
+    21300002: maverick hunter_1
+    21300004: maverick hunter_2
+    21300006: maverick hunter_3
+    21300008: maverick hunter_4
+    21300010: maverick hunter_5
+    21300012: maverick hunter_6
+    21300014: maverick hunter_7
+    21300016: maverick hunter_8
+    21300018: maverick hunter_9
+    21300020: maverick hunter_10
+    21300022: maverick hunter_11
+    21300024: maverick hunter_12
+    21300026: maverick hunter_13
+    21300028: maverick hunter_14
+    21300030: maverick hunter_15
+    21300032: maverick hunter_16
+    21300034: maverick hunter_17
+    21300036: maverick hunter_18
+    21300038: maverick hunter_19
+    21300040: maverick hunter_20
+    21300042: maverick hunter_21
+    21300044: maverick hunter_22
+    21300046: maverick hunter_23
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: maverick hunter_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 140
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: maverick hunter_1
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 138
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: maverick hunter_2
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 138
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: maverick hunter_3
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 140
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: maverick hunter_4
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 155
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: maverick hunter_5
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 155
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: maverick hunter_6
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 161
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: maverick hunter_7
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 161
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: maverick hunter_8
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: maverick hunter_9
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: maverick hunter_10
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 138
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: maverick hunter_11
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 138
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: maverick hunter_12
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 137
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: maverick hunter_13
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 137
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: maverick hunter_14
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 102
+        width: 4
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: maverick hunter_15
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 102
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: maverick hunter_16
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 102
+        width: 31
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: maverick hunter_17
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 90
+        width: 29
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: maverick hunter_18
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 94
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: maverick hunter_19
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 99
+        width: 23
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: maverick hunter_20
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 0
+        width: 14
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: maverick hunter_21
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 47
+        width: 52
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: maverick hunter_22
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 0
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: maverick hunter_23
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 0
+        width: 54
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
