@@ -91,6 +91,9 @@ public class PlayerControl : MonoBehaviour {
 	}
 
 
+	public void Exploded(int life) {
+		GetComponent<Rigidbody2D> ().AddForce (new Vector2(0,400));
+	}
 
 	public void Move(int angle) {
 		transform.eulerAngles = new Vector2 (0, angle);
