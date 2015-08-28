@@ -3,6 +3,9 @@ using System.Collections;
 
 public class PlayerControl : MonoBehaviour {
 
+
+	public int healthPoints;
+
 	public float velocidade;
 	public float forcaPulo;
 	public bool noChao;
@@ -14,7 +17,11 @@ public class PlayerControl : MonoBehaviour {
 	bool moveLeft;
 	bool moveRight;
 
+	public UnityEngine.UI.Text hpText;
+
+
 	public UnityEngine.UI.Image goku; 
+
 
 
 	public int easter;
@@ -75,7 +82,7 @@ public class PlayerControl : MonoBehaviour {
 			animator.SetBool("pulando",false);
 		}
 		else if (col.gameObject.tag == "Enemy") {
-			Destroy(gameObject);
+			Hit(10);
 		}
 	}
 
@@ -86,13 +93,29 @@ public class PlayerControl : MonoBehaviour {
 		} else if (col.gameObject.tag == "EndPhase") {
 			Application.LoadLevel ("map");
 		} else if (col.gameObject.tag == "Enemy") {
-			Destroy(gameObject);
+			Hit (10);
+			Destroy(col.gameObject);
+		} else if (col.gameObject.tag == "Bomb") {
+			Exploded(col.gameObject.GetComponent<BombControl>().bombDamage);
 		}
 	}
 
+	void changeLife(int hp) {
+		healthPoints += hp;
+		if (healthPoints < 0) {
+			healthPoints = 0;
+		}
+		hpText.text = "HP: " + healthPoints;
+	}
 
-	public void Exploded(int life) {
+
+	public void Exploded(int hp) {
+		changeLife (-hp);
 		GetComponent<Rigidbody2D> ().AddForce (new Vector2(0,400));
+	}
+
+	public void Hit(int hp) {
+		changeLife (-hp);
 	}
 
 	public void Move(int angle) {

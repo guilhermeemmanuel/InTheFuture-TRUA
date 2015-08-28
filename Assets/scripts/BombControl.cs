@@ -7,12 +7,12 @@ public class BombControl : MonoBehaviour {
 
 	public float timeToDestroy;
 
-	public float timePass;
+	float timePass;
+
+	public int bombDamage;
 
 	// Use this for initialization
 	void Start () {
-		//FIXME Isso deveria ser feito pelo objeto que cria a bomba
-		GetComponent<Rigidbody2D> ().AddForce (new Vector2(100,100));
 		animator = GetComponent<Animator> ();
 	}
 	
@@ -20,6 +20,8 @@ public class BombControl : MonoBehaviour {
 	void Update () {
 		timePass += Time.deltaTime;
 		if (timePass > timeToDestroy) {
+			GetComponent<Rigidbody2D>().gravityScale = 0;
+			GetComponent<CircleCollider2D>().isTrigger = true;
 			animator.SetBool("explode", true);
 		}
 	}
@@ -27,9 +29,10 @@ public class BombControl : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D col) {
 		if (col.gameObject.tag == "Player")  {
 			animator.SetBool("explode", true);
-			col.gameObject.GetComponent<PlayerControl>().Exploded(30);
+			col.gameObject.GetComponent<PlayerControl>().Exploded(bombDamage);
 		}
 
 	}
+
 
 }

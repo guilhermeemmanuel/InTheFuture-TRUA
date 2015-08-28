@@ -1,10 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\BombControl.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\Enemies\EnemyBombControl.cs">
     <Files>
-      <File FileName="Assets\scripts\BombControl.cs" Line="3" Column="1" />
-      <File FileName="Assets\scripts\PlayerControl.cs" Line="103" Column="37" />
-      <File FileName="Assets\scripts\Enemies\EnemyBombControl.cs" Line="26" Column="18" />
+      <File FileName="Assets\scripts\BombControl.cs" Line="31" Column="38" />
+      <File FileName="Assets\scripts\PlayerControl.cs" Line="98" Column="45" />
+      <File FileName="Assets\scripts\Enemies\EnemyBombControl.cs" Line="39" Column="63" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

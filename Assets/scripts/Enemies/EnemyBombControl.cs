@@ -35,7 +35,8 @@ public class EnemyBombControl : MonoBehaviour {
 
 	//This method will be called for behaviour when the animation of throw bomb ends
 	public void ThrowBomb() {
-		Instantiate(bomb,  new Vector2(transform.position.x + 1, transform.position.y + 0.5f), Quaternion.Euler(0, 180, 0)); 
+		GameObject newBomb = Instantiate(bomb,  new Vector2(transform.position.x - 0.8f, transform.position.y + 0.3f), Quaternion.Euler(0, 180, 0)) as GameObject; 
+		newBomb.GetComponent<Rigidbody2D> ().AddForce (new Vector2(-100,100));
 	}
 
 	void OnTriggerEnter2D(Collider2D col) {
